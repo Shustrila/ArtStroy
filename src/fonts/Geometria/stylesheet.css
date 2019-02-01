@@ -1,0 +1,33 @@
+@font-face {
+	font-family: 'Geometria';
+	src: url('Geometria-Heavy.eot');
+	src: local('Geometria Heavy'), local('Geometria-Heavy'),
+		url('Geometria-Heavy.eot?#iefix') format('embedded-opentype'),
+		url('Geometria-Heavy.woff') format('woff'),
+		url('Geometria-Heavy.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Geometria';
+	src: url('Geometria.eot');
+	src: local('Geometria'),
+		url('Geometria.eot?#iefix') format('embedded-opentype'),
+		url('Geometria.woff') format('woff'),
+		url('Geometria.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Geometria';
+	src: url('Geometria-Bold.eot');
+	src: local('Geometria Bold'), local('Geometria-Bold'),
+		url('Geometria-Bold.eot?#iefix') format('embedded-opentype'),
+		url('Geometria-Bold.woff') format('woff'),
+		url('Geometria-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
