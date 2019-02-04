@@ -14,27 +14,27 @@
 			<div class="container">
 				<ul class="header__menu-list">
 					<li class="header__menu-item">
-						<a class="header__menu-link" href="/">
+						<a class="header__menu-link js-scroll" href="body">
 							Главная
 						</a>
 					</li>
 					<li class="header__menu-item">
-						<a class="header__menu-link" href="/">
+						<a class="header__menu-link js-scroll" href="#production">
 							Каталог
 						</a>
 					</li>
 					<li class="header__menu-item">
-						<a class="header__menu-link" href="/">
+						<a class="header__menu-link js-scroll" href="#feedback">
 							Отзывы
 						</a>
 					</li>
 					<li class="header__menu-item">
-						<a class="header__menu-link" href="/">
+						<a class="header__menu-link js-scroll" href="#how-to-order">
 							Как заказать
 						</a>
 					</li>
 					<li class="header__menu-item">
-						<a class="header__menu-link" href="/">
+						<a class="header__menu-link js-scroll" href="#contacts">
 							Контакты
 						</a>
 					</li>
@@ -72,6 +72,9 @@
 						Заказать расчет
 					</a>
 				</div>
+				<div class="banner__image">
+					<img class="banner__image-material" src="./images/material-banner.png" alt="">
+				</div>
 			</div>
 		</div>
 
@@ -94,7 +97,7 @@
 			</div>
 		</div>
 
-		<div class="production">
+		<div class="production" id="production">
 			<div class="container">
 				<h2 class="title production__title">
 					Наша продукция
@@ -241,9 +244,9 @@
 		</div>
 
 		<div class="call-me">
-			<div class="container">
+			<div class="container call-me_container">
 				<div class="call-me__meneger">
-					<img src="" alt="" class="call-me__meneger-img">
+					<img class="call-me__meneger-img" src="./images/people-call.png" alt="">
 				</div>
 				<div class="call-me__info">
 					<h3 class="call-me__info-title">
@@ -272,7 +275,7 @@
 
 		<div class="special">
 			<div class="container">
-				<h2 class="special__title">
+				<h2 class="special__title title">
 					Акционные предложения
 				</h2>
 				<p class="special__info">
@@ -497,40 +500,40 @@
 				</h2>
 			</div>
 			<ul class="works__gallery">
-				<li class="works__gallery-item" style="background-image: url('images/jobs/1.png')">
+				<li class="works__gallery-item" style="background-image: url('./src/images/jobs/1.png')">
 					<a class="works__gallery-link" href="#"></a>
 				</li>
-				<li class="works__gallery-item" style="background-image: url('images/jobs/2.png')">
+				<li class="works__gallery-item" style="background-image: url('./src/images/jobs/2.png')">
 					<a class="works__gallery-link" href="#"></a>
 				</li>
-				<li class="works__gallery-item" style="background-image: url('images/jobs/3.png')">
+				<li class="works__gallery-item" style="background-image: url('./src/images/jobs/3.png')">
 					<a class="works__gallery-link" href="#"></a>
 				</li>
-				<li class="works__gallery-item" style="background-image: url('images/jobs/4.png')">
+				<li class="works__gallery-item" style="background-image: url('./src/images/jobs/4.png')">
 					<a class="works__gallery-link" href="#"></a>
 				</li>
-				<li class="works__gallery-item" style="background-image: url('images/jobs/5.png')">
+				<li class="works__gallery-item" style="background-image: url('./src/images/jobs/5.png')">
 					<a class="works__gallery-link" href="#"></a>
 				</li>
-				<li class="works__gallery-item" style="background-image: url('images/jobs/6.png')">
+				<li class="works__gallery-item" style="background-image: url('./src/images/jobs/6.png')">
 					<a class="works__gallery-link" href="#"></a>
 				</li>
-				<li class="works__gallery-item" style="background-image: url('images/jobs/7.png')">
+				<li class="works__gallery-item" style="background-image: url('./src/images/jobs/7.png')">
 					<a class="works__gallery-link" href="#"></a>
 				</li>
-				<li class="works__gallery-item" style="background-image: url('images/jobs/8.png')">
+				<li class="works__gallery-item" style="background-image: url('./src/images/jobs/8.png')">
 					<a class="works__gallery-link" href="#"></a>
 				</li>
-				<li class="works__gallery-item" style="background-image: url('images/jobs/9.png')">
+				<li class="works__gallery-item" style="background-image: url('./src/images/jobs/9.png')">
 					<a class="works__gallery-link" href="#"></a>
 				</li>
-				<li class="works__gallery-item" style="background-image: url('images/jobs/10.png')">
+				<li class="works__gallery-item" style="background-image: url('./src/images/jobs/10.png')">
 					<a class="works__gallery-link" href="#"></a>
 				</li>
 			</ul>
 		</div>
 
-		<div class="feedback">
+		<div class="feedback" id="feedback">
 			<div class="container">
 				<h2 class="feedback__title title">
 					Отзывы клиентов
@@ -578,7 +581,7 @@
 					</div>
 					<div class="proposals__card-info">
 						<div class="proposals__employee">
-							<div class="proposals__employee-avatar" style="background-image: url('images/avatar.jpg')"></div>
+							<div class="proposals__employee-avatar" style="background-image: url('./src/images/avatar.jpg')"></div>
 							<div class="proposals__employee-info">
 								<p class="proposals__employee-name">
 									Олег
@@ -633,7 +636,7 @@
 			</div>
 		</div>
 
-		<footer class="footer">
+		<footer class="footer" id="contacts">
 			<div class="container footer__container">
 				<a href="" class="footer__phone">
 					<span class="footer__name">
@@ -662,36 +665,38 @@
 			</div>
 		</footer>
 
+		<template id="modal-callback">
+			<div class="modal-callback">
+				<div class="modal-callback__heading">
+					<h3 class="modal-callback__heading-title">
+						Заказать обратный звонок
+					</h3>
+					<p class="modal-callback__heading-info">
+						Введите имя и телефон, менеджер перезвонит Вам:
+					</p>
+				</div>
+				<div class="modal-callback__content">
+					<form class="modal-callback__content-form" action="/">
+						<label class="modal-callback__form-label">
+							Введите ваше имя:
+							<input class="modal-callback__form-field" type="text" placeholder="Ваше имя:">
+						</label>
+						<label class="modal-callback__form-label">
+							Введите контактный телефон
+							<input class="modal-callback__form-field" type="tel" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ">
+						</label>
+						<input class="button modal-callback__form-submit" type="submit" value="Отправить">
+					</form>
+					<p class="modal-callback__content-info">
+						Отправляя заявку, вы соглашаетесь с
+						<a class="modal-callback__content-link" href="">
+							политикой конфиденциальности
+						</a>
+					</p>
+				</div>
+			</div>
+		</template>
 
-		<div class="modal-callback">
-			<div class="modal-callback__heading">
-				<h3 class="modal-callback__heading-title">
-					Заказать обратный звонок
-				</h3>
-				<p class="modal-callback__heading-info">
-					Введите имя и телефон, менеджер перезвонит Вам:
-				</p>
-			</div>
-			<div class="heading__content">
-				<form class="heading__content-form" action="/">
-					<label class="heading__form-label">
-						Введите ваше имя:
-						<input class="heading__form-field" type="text" placeholder="Ваше имя:">
-					</label>
-					<label class="heading__form-label">
-						Введите контактный телефон
-						<input class="heading__form-field" type="tel" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ">
-					</label>
-					<input class="button" type="submit" value="Отправить">
-				</form>
-				<p class="heading__content-info">
-					Отправляя заявку, вы соглашаетесь с
-					<a class="heading__content-link" href="">
-						политикой конфиденциальности
-					</a>
-				</p>
-			</div>
-		</div>
 
 			<div class="modal-item">
 				<div class="modal-item__heading">
@@ -760,7 +765,9 @@
 							</a>
 						</p>
 					</form>
-					<img class="modal-item__content-img" src="" alt="">
+					<div class="modal-item__wrapper-img">
+						<img class="modal-item__content-img" src="./images/products/1.png" alt="">
+					</div>
 				</div>
 			</div>
 			<script src="main.js"></script>
