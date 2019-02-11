@@ -1,10 +1,10 @@
-import "./css/style.css"
-import Scroll  from "./js/scroll.js"
+import './css/style.css';
 
-document.addEventListener("DOMContentLoaded", () => {
-	Scroll({
-		el: ".js-scroll",
-		typeEvent: "click"
-	})
-
-});
+// import Scroll from './js/scroll.js';
+//
+// document.addEventListener('DOMContentLoaded', () => {
+//   Scroll({
+//     el: '.js-scroll',
+//     typeEvent: 'click',
+//   });
+// });
